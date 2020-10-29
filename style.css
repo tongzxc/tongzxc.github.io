@@ -8,6 +8,7 @@ body, html {
     scroll-behavior: smooth;
 }
 
+
 /* logo */
 .logo {
     color: #000000;
@@ -19,6 +20,7 @@ body, html {
     text-decoration: none;
     color: #000000;
 }
+
 
 /* top navigation bar */
 nav {
@@ -52,6 +54,7 @@ nav {
     list-style: none;
 }
 
+
 /* hero image */
 .heroImage {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("src/IMG_3960.JPG");
@@ -79,6 +82,7 @@ nav {
     display: inline-block;
 }
 
+
 /* typewriter text */
 .typedText {
     font-size: 60px;
@@ -105,6 +109,7 @@ nav {
     100% {background-color: #b0bcb1; }
 }
 
+
 /* for the body section (about, portfolio and contact sections) */
 .aboutSection, .portfolioSection, .resumeSection, .contactSection { /* to add more if there are more setions */
     position: relative;
@@ -127,6 +132,7 @@ nav {
     color: #787878;
 }
 
+
 /* about section */
 .bodyImage {
     float: left;
@@ -141,6 +147,7 @@ nav {
     padding-left: 25vh;
     margin-top: 30px;
 }
+
 
 /* portfolio section */
 .slider {
@@ -171,8 +178,12 @@ nav {
     transform: translate(-50%, -50%);
     font-size: 25px;
     color: #000000;
-    opacity: 0;
     visibility: hidden;
+}
+.column div p {
+    font-size: 15px;
+    color: #554f5c;
+    line-height: 20px;
 }
 .column img {
     width: 40vh;
@@ -188,12 +199,6 @@ nav {
     visibility: visible;
     opacity: 1;
 }
-.column div p {
-    font-size: 15px;
-    color: #554f5c;
-    line-height: 20px;
-}
-    
 
 
 /* header and paragraph styles */
