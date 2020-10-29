@@ -48,3 +48,56 @@ nav {
 .navLinks li {
     list-style: none;
 }
+
+/* hero image */
+.heroImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("src/IMG_3960.JPG");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+  }
+.heroContainer {
+    position: absolute;
+    width: 100%;
+    color: #FFFFFF;
+    height: auto;
+    margin-left: 5vh;
+    margin-top: 35vh;
+}
+.heroContainer h2 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* typewriter text */
+.typedText {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #F0F0F0;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.cursor { /* for the typing cursor */
+    display: inline-block;
+    width: 4px;
+    font-size: 60px;
+    background-color: #b0bcb1;
+    margin-left: 0.2rem;
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+@keyframes blink { /* for the typing cursor blinking animation */
+    0% {background-color: #b0bcb1; }
+    49% {background-color: #b0bcb1; }
+    50% {background-color: transparent; }
+    99% {background-color: #b0bcb1; }
+    100% {background-color: #b0bcb1; }
+}
