@@ -4,6 +4,7 @@ body, html {
     padding: 0;
     background: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     scroll-behavior: smooth;
 }
 
@@ -125,8 +126,36 @@ nav {
     overflow-x: hidden;
     color: #787878;
 }
+.bodyImage {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    height: auto;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid #F0F0F0;
+}
+.aboutBody {
+    padding-left: 25vh;
+}
 
+/* header and paragraph styles */
 h3 {
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    color: #c384a0;
+}
+h4 {
+    margin-top: -10px;
     font-size: 40px;
-    color: #3D3D3D;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 600;
+    color: #000000;
+}
+p.big {
+    margin-bottom: 5vh;
 }
