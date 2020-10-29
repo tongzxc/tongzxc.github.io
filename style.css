@@ -1,0 +1,50 @@
+body, html {
+    height: 100%;
+    margin: 0%;
+    padding: 0;
+    background: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* logo */
+.logo {
+    color: #000000;
+    font-size: 27px;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 2px;
+}
+.logo a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* top navigation bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #F0F0F0;
+    width: 100%;
+}
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+ }
+.navLinks a {
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navLinks a:hover{
+    color: #c3b99e;
+    transition: 0.3s;
+}
+.navLinks li {
+    list-style: none;
+}
