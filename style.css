@@ -6,6 +6,7 @@ body, html {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 
@@ -27,7 +28,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 10vh;
+    height: 10vh;
     background-color: #F0F0F0;
     position: fixed;
     z-index: 10;
@@ -128,7 +129,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 70vh; /* + .contactSection height = 115vh */
+    height: 80vh; /* + .contactSection height = 115vh */
     width: 100%;
 }
 .bodyText { 
@@ -283,3 +284,17 @@ p.big {
     margin-bottom: 5vh;
 }
 
+
+/* footer */
+footer {
+    background-color: #F0F0F0;
+    height: 10vh; /* + .contactSection height = 115vh */
+    padding: 5vh 10vh;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+footer p {
+    font-size: 11px;
+    text-transform: uppercase;
+}
