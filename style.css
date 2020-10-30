@@ -169,7 +169,6 @@ nav {
     display: inline-block;
     justify-content: space-around;
     padding: 0 1vh; /* spacing between columns */
-    
 }
 .column div {
     position: absolute;
@@ -201,6 +200,50 @@ nav {
 }
 
 
+/* resume section */
+.resumeSection img {
+    float: left;
+    width: 8vh;
+    height: 8vh;
+    height: auto;
+    z-index: 1;
+}
+
+
+/* contact section */
+.table { /* for centering the icons */
+    display: table;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+.socialLinks li {
+    display: inline;
+    margin-left: 1vh;
+    margin-right: 3vh;
+    justify-content: space-around;
+ }
+.table a {
+    color: 	#c3b99e;
+    text-decoration: none;
+ }
+.table a:hover {
+    color: #c3b99e;
+}
+.table a:visited {
+    color: #c3b99e;
+}
+.socialLinks img {
+    width: 11vh;
+    opacity: 0.3;
+}
+.socialLinks img:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+
 /* header and paragraph styles */
 h3 {
     font-size: 18px;
@@ -217,6 +260,14 @@ h4 {
     text-align: center;
     font-weight: 600;
     color: #000000;
+}
+h5 {
+    margin-top: 0px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 600;
+    color: #c384a0;
 }
 p.big {
     margin-bottom: 5vh;
