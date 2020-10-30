@@ -6,7 +6,6 @@ body, html {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     scroll-behavior: smooth;
-    overflow: hidden;
 }
 
 
@@ -28,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: 9vh;
     background-color: #F0F0F0;
     position: fixed;
     z-index: 10;
@@ -288,11 +287,12 @@ p.big {
 /* footer */
 footer {
     background-color: #F0F0F0;
-    height: 10vh; /* + .contactSection height = 115vh */
+    height: 25vh; /* + .contactSection height = 115vh */
     padding: 5vh 10vh;
     text-align: center;
     align-items: center;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    margin-bottom: -15vh;
 }
 footer p {
     font-size: 11px;
