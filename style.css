@@ -154,7 +154,7 @@ nav {
     border: 2px solid #F0F0F0;
 }
 .aboutBody {
-    padding-left: 25vh;
+    padding-left: auto;
     margin-top: 30px;
 }
 
@@ -224,14 +224,13 @@ nav {
 .table { /* for centering the icons */
     display: table;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: auto auto;
     text-align: center;
     align-items: center;
 }
 .socialLinks li {
     display: inline;
-    margin-left: 1vh;
-    margin-right: 3vh;
+    margin-right: 1vh;
     justify-content: space-around;
  }
 .table a {
