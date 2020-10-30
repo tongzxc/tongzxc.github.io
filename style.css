@@ -111,7 +111,7 @@ nav {
 
 
 /* for the body section (about, portfolio and contact sections) */
-.aboutSection, .portfolioSection, .resumeSection, .contactSection { /* to add more if there are more setions */
+.aboutSection, .portfolioSection, .resumeSection { /* to add more if there are more setions */
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -119,6 +119,16 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
     height: 100vh;
+    width: 100%;
+}
+.contactSection {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 70vh; /* + .contactSection height = 115vh */
     width: 100%;
 }
 .bodyText { 
@@ -168,7 +178,7 @@ nav {
     position: relative;
     display: inline-block;
     justify-content: space-around;
-    padding: 0 1vh; /* spacing between columns */
+    padding: 0 1vh;
 }
 .column div {
     position: absolute;
@@ -272,3 +282,4 @@ h5 {
 p.big {
     margin-bottom: 5vh;
 }
+
