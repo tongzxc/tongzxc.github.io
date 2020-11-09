@@ -27,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 9vh;
+    height: 12vh;
     background-color: #F0F0F0;
     position: fixed;
     z-index: 10;
@@ -130,6 +130,7 @@ nav {
     flex-direction: row;
     height: 80vh; /* + .contactSection height = 115vh */
     width: 100%;
+    overflow-y: hidden;
 }
 .bodyText { 
     margin-top: 15vh;
@@ -185,7 +186,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 25px;
+    font-size: 22px;
     color: #000000;
     visibility: hidden;
 }
@@ -195,8 +196,8 @@ nav {
     line-height: 20px;
 }
 .column img {
-    width: 40vh;
-    height: 40vh;
+    width: 30vh;
+    height: 30vh;
     object-fit: cover;
 }
 .column img:hover {
@@ -222,16 +223,19 @@ nav {
 
 /* contact section */
 .table { /* for centering the icons */
-    display: table;
+    display: block;
     justify-content: space-around;
-    margin: auto auto;
     text-align: center;
     align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+.socialLinks {
+    list-style: none;
+    padding-left: 0;
 }
 .socialLinks li {
-    display: inline;
-    margin-right: 1vh;
-    justify-content: space-around;
+    display: contents;
  }
 .table a {
     color: 	#c3b99e;
@@ -244,7 +248,7 @@ nav {
     color: #c3b99e;
 }
 .socialLinks img {
-    width: 11vh;
+    width: 9vh;
     opacity: 0.3;
 }
 .socialLinks img:hover {
@@ -286,8 +290,8 @@ p.big {
 /* footer */
 footer {
     background-color: #F0F0F0;
-    height: 25vh; /* + .contactSection height = 115vh */
-    padding: 5vh 10vh;
+    height: 10vh; /* + .contactSection height = 115vh */
+    padding: 5vh 10vh 5vh;
     text-align: center;
     align-items: center;
     letter-spacing: 2px;
