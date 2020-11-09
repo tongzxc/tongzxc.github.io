@@ -136,7 +136,7 @@ nav {
     margin-top: 15vh;
     width: 75%;
     height: 100vh; 
-    font-size: 16px;
+    font-size: 15px;
     line-height: 35px;
     position: relative;
     overflow-x: hidden;
@@ -212,12 +212,52 @@ nav {
 
 
 /* resume section */
-.resumeSection img {
+.timeline {
+    position: relative;
+    width: 100%;
+}
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background:  #F0F0F0;
+}
+.timeline ul {
+    margin: 0;
+    padding: 1vh;
+}
+.timeline ul li{
+    list-style: none;
+    line-height: normal;
+    position: relative;
+    width: 45%;
+    padding-bottom: 4vh;
+}
+.timeline ul li:nth-child(odd) {
     float: left;
-    width: 8vh;
-    height: 8vh;
-    height: auto;
-    z-index: 1;
+    text-align: right;
+    clear: both;
+}
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+/* for date in timeline */
+.timeline ul li:nth-child(odd) .timelineTime { 
+    padding: 1vh;
+    background: #F0F0F0;
+    color: #554f5c;
+    border-radius: 15px;
+}
+/* for date in timeline */
+.timeline ul li:nth-child(even) .timelineTime {
+    padding: 1vh;
+    background: #F0F0F0;
+    color: #554f5c;
+    border-radius: 15px;
 }
 
 
@@ -275,12 +315,30 @@ h4 {
     color: #000000;
 }
 h5 {
-    margin-top: 0px;
+    margin-top: 1vh;
+    margin-bottom: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #c384a0;
+}
+h6 {
+    margin-top: 0;
+    margin-bottom: 3vh;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #5e647b;
+}
+.miniHeader {
+    margin-top: -25px;
+    margin-bottom: 4vh;
     font-size: 25px;
     letter-spacing: 1px;
     text-align: center;
     font-weight: 600;
-    color: #c384a0;
+    color: #5e647b;
+    text-decoration: underline;
 }
 p.big {
     margin-bottom: 5vh;
@@ -290,7 +348,7 @@ p.big {
 /* footer */
 footer {
     background-color: #F0F0F0;
-    height: 10vh; /* + .contactSection height = 115vh */
+    height: 8vh; /* + .contactSection height = 115vh */
     padding: 5vh 10vh 5vh;
     text-align: center;
     align-items: center;
