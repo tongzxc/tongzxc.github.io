@@ -37,3 +37,34 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(type, newTextDelay);
 });
+
+
+// for slider in about me
+const slider = document.querySelector('.slider');
+
+const leftArrow = document.querySelector('.leftArrow');
+const rightArrow = document.querySelector('.rightArrow');
+
+var sectionIndex = 0;
+
+leftArrow.addEventListener('click', function() {
+    if (sectionIndex > 0) { 
+        sectionIndex = sectionIndex - 1
+        slider.style.transform = 'translate(' + (sectionIndex) * -50 + '%)'; // change number to (100% / number of pages)
+    }
+    else {
+        sectionIndex = 0 
+    }
+    
+});
+
+rightArrow.addEventListener('click', function() {
+    if (sectionIndex < 3) { // number of section - 1
+        sectionIndex = sectionIndex + 1
+        slider.style.transform = 'translate(' + (sectionIndex) * -50 + '%)'; // change number to (100% / number of pages)
+    }
+    else {
+        sectionIndex = 1 // number of section - 1
+    }
+    
+});

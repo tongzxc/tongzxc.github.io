@@ -8,6 +8,10 @@ body, html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
 
 /* logo */
 .logo {
@@ -136,7 +140,7 @@ nav {
     margin-top: 15vh;
     width: 75%;
     height: 100vh; 
-    font-size: 15px;
+    font-size: 14px;
     line-height: 35px;
     position: relative;
     overflow-x: hidden;
@@ -165,6 +169,7 @@ nav {
     display: flex;
     width: 100%; /* change this to (number of sections)*100% */
     transition: all 0.5s;
+    height: 69vh;
 }
 .slider section {
     flex-basis: 100%;
@@ -226,14 +231,14 @@ nav {
 }
 .timeline ul {
     margin: 0;
-    padding: 1vh;
+    padding: 4vh;
 }
 .timeline ul li{
     list-style: none;
     line-height: normal;
     position: relative;
     width: 45%;
-    padding-bottom: 4vh;
+    padding-bottom: 2vh;
 }
 .timeline ul li:nth-child(odd) {
     float: left;
@@ -247,17 +252,60 @@ nav {
 }
 /* for date in timeline */
 .timeline ul li:nth-child(odd) .timelineTime { 
-    padding: 1vh;
-    background: #F0F0F0;
+    padding: 0.5vh;
+    border-bottom: 2.5px solid #F0F0F0;
     color: #554f5c;
-    border-radius: 15px;
 }
 /* for date in timeline */
 .timeline ul li:nth-child(even) .timelineTime {
-    padding: 1vh;
-    background: #F0F0F0;
+    padding: 0.5vh;
+    border-bottom: 2.5px solid #F0F0F0;
     color: #554f5c;
-    border-radius: 15px;
+}
+.timeline ul li a { 
+    text-decoration: none;
+    color: #c384a0;
+}
+.timeline ul li a:hover { 
+    color: #c3b99e;
+    transition: 0.3s;
+}
+.timeline ul li a:visited { 
+    color: #c384a0;
+}
+
+
+/* sliders and arrows in resume */
+.slider {
+    display: flex;
+    width: 200%; /* change this to (number of section)*100% */
+    transition: all 0.5s;
+    overflow-y: scroll;
+}
+.slider section {
+    flex-basis: 100%;
+}
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    left: 1vh;
+    z-index: 5;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    right: 3vh;
+    z-index: 5;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+.leftArrow:hover, .rightArrow:hover {
+    opacity: 1;
+    transition: 0.3s;
 }
 
 
@@ -317,21 +365,20 @@ h4 {
 h5 {
     margin-top: 1vh;
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 17px;
     letter-spacing: 1px;
     font-weight: 400;
     color: #c384a0;
 }
 h6 {
     margin-top: 0;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 400;
     color: #5e647b;
 }
 .miniHeader {
-    margin-top: -25px;
     margin-bottom: 4vh;
     font-size: 25px;
     letter-spacing: 1px;
