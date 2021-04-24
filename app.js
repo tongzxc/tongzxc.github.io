@@ -1,3 +1,26 @@
+// for the navigation bar
+const navSlide = () => {
+    const threeLines = document.querySelector('.threeLines');
+    const nav = document.querySelector('.navLinks');
+    const navLink = document.querySelectorAll('.navLinks li');
+
+    
+    threeLines.addEventListener('click',() => {
+        nav.classList.toggle('navActive');
+
+        navLink.forEach((link,index) => {
+            
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`;
+            } 
+        });
+});  
+}
+
+navSlide();
+
 // for the typing animation in hero image
 const typedTextSpan = document.querySelector(".typedText");
 
