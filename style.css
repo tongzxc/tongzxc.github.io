@@ -13,6 +13,17 @@ body, html {
     background: transparent; /* make scrollbar transparent */
 }
 
+a {
+    color: 	#c3b99e;
+    text-decoration: none;
+ }
+a:hover {
+    color: #c3b99e;
+}
+a:visited {
+    color: #c3b99e;
+}
+
 /* logo */
 .logo {
     color: #000000;
@@ -132,14 +143,14 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 80vh; /* + .contactSection height = 115vh */
+    height: 77vh; /* + .contactSection height = 115vh */
     width: 100%;
     overflow-y: hidden;
 }
 .bodyText { 
-    margin-top: 15vh;
+    margin-top: 10vh;
     width: 75%;
-    height: 100vh; 
+    height: 80vh; 
     font-size: 14px;
     line-height: 35px;
     position: relative;
@@ -165,17 +176,18 @@ nav {
 
 
 /* portfolio section */
-.slider {
+.portfolioSlider {
     display: flex;
-    width: 100%; /* change this to (number of sections)*100% */
+    width: 300%; /* change this to (number of sections)*100% */
     transition: all 0.5s;
-    height: 69vh;
+    overflow-y: scroll;
 }
-.slider section {
+.portfolioSlider section {
     flex-basis: 100%;
 }
 .portfolioBody {
     margin-top: 30px;
+    border: 1px solid;
 }
 .row {
     text-align: center;   
@@ -191,19 +203,20 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
+    font-size: 16px;
     color: #000000;
     visibility: hidden;
+    line-height: 1.6;
     width: 80%;
 }
 .column div p {
-    font-size: 15px;
+    font-size: 13px;
     color: #554f5c;
-    line-height: 20px;
+    line-height: normal;
 }
 .column img {
-    width: 30vh;
-    height: 30vh;
+    width: 22vh;
+    height: 22vh;
     object-fit: cover;
 }
 .column img:hover {
@@ -226,6 +239,28 @@ nav {
 .portfolioBody p a {
     color: 	#c3b99e;
     text-decoration: none;
+}
+.leftArrowPortfolio {
+    position: absolute;
+    top: 49%;
+    cursor: pointer;
+    left: 1vh;
+    z-index: 5;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+.rightArrowPortfolio {
+    position: absolute;
+    top: 49%;
+    cursor: pointer;
+    right: 3vh;
+    z-index: 5;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+.leftArrowPortfolio:hover, .rightArrowPortfolio:hover {
+    opacity: 1;
+    transition: 0.3s;
 }
 
 
@@ -294,11 +329,12 @@ nav {
     width: 200%; /* change this to (number of section)*100% */
     transition: all 0.5s;
     overflow-y: scroll;
+    height: 69vh;
 }
 .slider section {
     flex-basis: 100%;
 }
-.leftArrow {
+.leftArrowResume {
     position: absolute;
     top: 50%;
     cursor: pointer;
@@ -307,7 +343,7 @@ nav {
     transform: translateY(-50%);
     opacity: 0.5;
 }
-.rightArrow {
+.rightArrowResume {
     position: absolute;
     top: 50%;
     cursor: pointer;
@@ -338,16 +374,6 @@ nav {
 .socialLinks li {
     display: contents;
  }
-.table a {
-    color: 	#c3b99e;
-    text-decoration: none;
- }
-.table a:hover {
-    color: #c3b99e;
-}
-.table a:visited {
-    color: #c3b99e;
-}
 .socialLinks img {
     width: 9vh;
     opacity: 0.3;

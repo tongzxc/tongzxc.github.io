@@ -38,16 +38,47 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(type, newTextDelay);
 });
 
+// for slider in portfolio
+const portfolioSlider = document.querySelector('.portfolioSlider');
 
-// for slider in about me
+const leftArrowPortfolio = document.querySelector('.leftArrowPortfolio');
+const rightArrowPortfolio = document.querySelector('.rightArrowPortfolio');
+
+
+var sectionPortfolioIndex = 0;
+
+leftArrowPortfolio.addEventListener('click', function() {
+    if (sectionPortfolioIndex > 0) { 
+        sectionPortfolioIndex = sectionPortfolioIndex - 1
+        portfolioSlider.style.transform = 'translate(' + (sectionPortfolioIndex) * -100/3 + '%)'; // change number to (100% / number of pages)
+    }
+    else {
+        sectionPortfolioIndex = 0 
+    }
+    
+});
+
+rightArrowPortfolio.addEventListener('click', function() {
+    if (sectionPortfolioIndex < 2) { // number of section - 1
+        sectionPortfolioIndex = sectionPortfolioIndex + 1
+        portfolioSlider.style.transform = 'translate(' + (sectionPortfolioIndex) * -100/3 + '%)'; // change number to (100% / number of pages)
+    }
+    else {
+        sectionPortfolioIndex = 2 // number of section - 1
+    }
+    
+});
+
+
+// for slider in resume
 const slider = document.querySelector('.slider');
 
-const leftArrow = document.querySelector('.leftArrow');
-const rightArrow = document.querySelector('.rightArrow');
+const leftArrowResume = document.querySelector('.leftArrowResume');
+const rightArrowResume = document.querySelector('.rightArrowResume');
 
 var sectionIndex = 0;
 
-leftArrow.addEventListener('click', function() {
+leftArrowResume.addEventListener('click', function() {
     if (sectionIndex > 0) { 
         sectionIndex = sectionIndex - 1
         slider.style.transform = 'translate(' + (sectionIndex) * -50 + '%)'; // change number to (100% / number of pages)
@@ -58,8 +89,8 @@ leftArrow.addEventListener('click', function() {
     
 });
 
-rightArrow.addEventListener('click', function() {
-    if (sectionIndex < 3) { // number of section - 1
+rightArrowResume.addEventListener('click', function() {
+    if (sectionIndex < 1) { // number of section - 1
         sectionIndex = sectionIndex + 1
         slider.style.transform = 'translate(' + (sectionIndex) * -50 + '%)'; // change number to (100% / number of pages)
     }
