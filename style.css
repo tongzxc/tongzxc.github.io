@@ -270,12 +270,12 @@ nav {
     transition: 0.5s;
     opacity: 0.2;
 }
-.column:hover div {
+.column div:hover {
     transition: 0.6s;
     visibility: visible;
     opacity: 1;
 }
-.column div:hover {
+.column:hover div {
     transition: 0.6s;
     visibility: visible;
     opacity: 1;
