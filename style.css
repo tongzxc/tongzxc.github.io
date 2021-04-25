@@ -51,10 +51,10 @@ nav {
 .navLinks {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 55%;
  }
 .navLinks a {
-    font-size: 14px;
+    font-size: 16px;
     color: #000000;
     letter-spacing: 2px;
     text-decoration: none;
