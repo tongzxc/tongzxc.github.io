@@ -262,12 +262,12 @@ nav {
     line-height: normal;
 }
 .column img {
-    width: 22vh;
-    height: 22vh;
+    width: 24vh;
+    height: 24vh;
     object-fit: cover;
 }
 .column img:hover {
-    transition: 1s;
+    transition: 0.5s;
     opacity: 0.2;
 }
 .column:hover div {
